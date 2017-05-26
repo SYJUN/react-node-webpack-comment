@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist",
-    "server": "node server.js",
-    "watch":"webpack --progress --color --watch",
-    "dev":"webpack --progress --color",
+    "server": "npm run dist && node server.js && npm run watch",
+    "watch": "webpack --progress --color --watch",
+    "dev": "webpack --progress --color",
     "dist": "npm run clean && webpack --progress --color"
   },
   "keywords": [
@@ -37,6 +37,7 @@
     "webpack": "^1.13.3"
   },
   "dependencies": {
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "showdown": "^1.6.4"
   }
 }
