@@ -37,20 +37,20 @@ export default class CommentForm extends Component{
 		return (
 			<div className="commentBox">
 				<form className="commentForm" onSubmit={this.handleSubmit.bind(this)}>
-	        <input
-	          type="text"
-	          placeholder="Your name"
-	          value={this.state.author}
-	          onChange={this.handleAuthorChange.bind(this)}
-	        />
-	        <input
-	          type="text"
-	          placeholder="Say something..."
-	          value={this.state.text}
-	          onChange={this.handleTextChange.bind(this)}
-	        />
-	        <input type="submit" value="Post" />
-	      </form>
+					<input
+					  type="text"
+					  placeholder="Your name"
+					  value={this.state.author}
+					  onChange={this.handleAuthorChange.bind(this)}
+					/>
+					<input
+					  type="text"
+					  placeholder="Say something..."
+					  value={this.state.text}
+					  onChange={this.handleTextChange.bind(this)}
+					/>
+					<input type="submit" value="Post" />
+				</form>
 			</div>
 		);
 	}
