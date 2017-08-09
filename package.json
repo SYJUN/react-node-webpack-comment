@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist",
-    "server": "npm run dist && node server.js",
+    "server": "npm run dist && node server.js && process.env.PORT=1234",
     "dev": "webpack --progress --color --watch",
     "dist": "npm run clean && webpack --progress --color"
   },
